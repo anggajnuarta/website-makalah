@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login ke Web Makalah</h2>
+        <form onsubmit="return checkLogin()">
+            <label>Username:</label><br>
+            <input type="text" id="username" placeholder="Masukkan username" required><br><br>
+            
+            <label>Password:</label><br>
+            <input type="password" id="password" placeholder="Masukkan password" required><br><br>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script>
+        function checkLogin() {
+            const user = document.getElementById("username").value;
+            const pass = document.getElementById("password").value;
+
+            if (user === "angga" && pass === "12345") {
+                window.location.href = "index.html"; // pindah ke halaman utama
+                return false;
+            } else {
+                alert("Username atau password salah!");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
