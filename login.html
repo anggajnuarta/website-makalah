@@ -14,9 +14,22 @@
             <label>Password:</label><br>
             <input type="password" name="password" required><br><br>
 
-            <!-- Tombol login langsung redirect ke data-diri.html -->
-            <button type="button" onclick="window.location.href='data-diri.html'">Login</button>
+            <button type="button" onclick="login()">Login</button>
         </form>
     </div>
+
+    <script>
+    function login() {
+        const username = document.querySelector('input[name="username"]').value;
+        const password = document.querySelector('input[name="password"]').value;
+
+        // Ganti "admin" dan "1234" sesuai username/password yang kamu inginkan
+        if (username === "angga" && password === "12345") {
+            window.location.href = "data-diri.html";
+        } else {
+            alert("Username atau password salah!");
+        }
+    }
+    </script>
 </body>
 </html>
