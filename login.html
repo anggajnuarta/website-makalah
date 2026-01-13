@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <title>Website Makalah</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Login - Website Makalah</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>Selamat Datang di Website Makalah</h2>
-    <p>Pilih menu di bawah untuk melanjutkan:</p>
+    <div class="container">
+        <h2>Login ke Website Makalah</h2>
+        <form>
+            <label>Username:</label><br>
+            <input type="text" name="username" required><br><br>
 
-    <nav>
-      <ul>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="data diri.html">Data Diri</a></li>
-        <li><a href="logout.html">Logout</a></li>
-        <li><a href="materi.html">Materi</a></li>
-      </ul>
-    </nav>
-  </div>
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br><br>
+
+            <!-- Tombol login langsung redirect ke data-diri.html -->
+            <button type="button" onclick="window.location.href='data-diri.html'">Login</button>
+        </form>
+    </div>
 </body>
 </html>
